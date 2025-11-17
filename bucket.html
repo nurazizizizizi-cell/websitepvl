@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 80px;
+    }
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: #f3f3f3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    height: 70px;
+}
+
+  .logo {
+  width: 80px;
+  height: auto;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 150px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #3a7d44;
+}
+@media (max-width: 768px){
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+.container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+      max-width: 1000px;
+      margin: auto;
+}
+
+ h2 {
+      text-align: center;
+      color: #1e3a8a;
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+
+    /* --- Produk --- */
+    .produk {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .produk img{
+      width: 250px;
+      height: 200px;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+      
+
+    .deskripsi {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .deskripsi h3 {
+      margin: 0;
+      color: #1e3a8a;
+    }
+
+    .deskripsi p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* --- Layout dua kolom --- */
+    .info-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    /* Kolom kiri: Teknik */
+    .kolom-kiri {
+      flex: 1;
+    }
+
+    /* Kolom kanan: Alat+Bahan dan Keuangan */
+    .kolom-kanan {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .box {
+      background-color: #f9fafb;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      border: 1px solid #e5e7eb;
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    }
+
+    .teknik {
+      background-color: #e8f0ff;
+    }
+
+    .bahan {
+      background-color: #e8f7ff;
+    }
+
+    .keuangan {
+      background-color: #fff9e6;
+    }
+
+    h4 {
+      margin-top: 0;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    ul, ol {
+      margin: 0;
+      padding-left: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    /* --- Responsif untuk HP --- */
+    @media (max-width: 768px) {
+      .info-row {
+        flex-direction: column;
+      }
+
+      .produk {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .produk img {
+        margin-bottom: 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+   <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="ASSET2/LOGO (2).png" alt="Logo" class="logo">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#beranda">HOME</a></li>
+        <li><a href="#tentang">ABOUT</a></li>
+        <li><a href="#analisis">ANALYSIS</a></li>
+        <li><a href="#product">PRODUCT</a></li>
+        <li><a href="#">MYTEAM</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>Kerajinan Bucket Cantik</h2>
+
+    <div class="produk">
+      <img src="asset/bucket flanel.jpeg" alt="Bucket">
+      <div class="deskripsi">
+        <h3>Bucket</h3>
+        <p>Bucket ini dibuat dari bahan kain flanel warna-warni yang disusun membentuk bunga cantik.
+        Cocok untuk hadiah ulang tahun, wisuda, atau dekorasi kamar agar tampak indah dan berwarna.</p>
+      </div>
+    </div>
+
+    <!-- Dua kolom utama -->
+    <div class="info-row">
+      <!-- Kiri -->
+      <div class="kolom-kiri">
+        <div class="box teknik">
+          <h4>Teknik</h4>
+          <ol>
+            <li>Potong kain flanel dgn ukuran tertentu</li>
+            <li>Gulung sampai di lipat membentuk kelopak bunga</li>
+            <li>Rekatkan menggunakan lem</li>
+            <li>Gunakan kawat bunga atau stik kayu</li>
+            <li>Bungkus dengan floral tape hijau agar menyerupai batang</li>
+            <li>Gabungkan beberapa bunga jadi satu</li>
+            <li>Bungkus dengan kertas buket agar lebih rapi</li>
+            <li>Ikat bawahnya menggunakan pita</li>
+            
+          </ol>
+        </div>
+      </div>
+
+      <!-- Kanan -->
+      <div class="kolom-kanan">
+        <div class="box bahan">
+          <h4>Alat dan Bahan</h4>
+          <ul>
+            <li>Kain flanel warna-warni</li>
+            <li>Pita satin</li>
+            <li>Kawat bunga</li>
+            <li>Gunting</li>
+            <li>Lem tembak</li>
+            <li>Kertas buket / wrapping</li>
+          </ul>
+        </div>
+
+        <div class="box keuangan">
+          <h4>Informasi Keuangan</h4>
+          <p><strong>Modal & Harga jual:</strong> Rp 38.000 & 75.000</p>
+          <p><strong>Laba:</strong>Rp.75.000 - 38.000 = Rp 37.000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</body>
+</html>

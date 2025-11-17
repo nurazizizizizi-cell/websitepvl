@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 80px;
+    }
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: #f3f3f3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    height: 70px;
+}
+
+  .logo {
+  width: 80px;
+  height: auto;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 150px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #3a7d44;
+}
+@media (max-width: 768px){
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+.container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+      max-width: 1000px;
+      margin: auto;
+}
+
+ h2 {
+      text-align: center;
+      color: #1e3a8a;
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+
+    /* --- Produk --- */
+    .produk {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .produk img{
+      width: 250px;
+      height: 200px;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+      
+
+    .deskripsi {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .deskripsi h3 {
+      margin: 0;
+      color: #1e3a8a;
+    }
+
+    .deskripsi p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* --- Layout dua kolom --- */
+    .info-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    /* Kolom kiri: Teknik */
+    .kolom-kiri {
+      flex: 1;
+    }
+
+    /* Kolom kanan: Alat+Bahan dan Keuangan */
+    .kolom-kanan {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .box {
+      background-color: #f9fafb;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      border: 1px solid #e5e7eb;
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    }
+
+    .teknik {
+      background-color: #e8f0ff;
+    }
+
+    .bahan {
+      background-color: #e8f7ff;
+    }
+
+    .keuangan {
+      background-color: #fff9e6;
+    }
+
+    h4 {
+      margin-top: 0;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    ul, ol {
+      margin: 0;
+      padding-left: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    /* --- Responsif untuk HP --- */
+    @media (max-width: 768px) {
+      .info-row {
+        flex-direction: column;
+      }
+
+      .produk {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .produk img {
+        margin-bottom: 10px;
+      }
+    }
+
+  </style>
+
+   <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="ASSET2/LOGO (2).png" alt="Logo" class="logo">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#beranda">HOME</a></li>
+        <li><a href="#tentang">ABOUT</a></li>
+        <li><a href="#analisis">ANALYSIS</a></li>
+        <li><a href="#product">PRODUCT</a></li>
+        <li><a href="#">MYTEAM</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Lampu sendok</h2>
+
+    <div class="produk">
+      <img src="asset/lampu sendok.jpeg" alt="Bucket">
+      <div class="deskripsi">
+        <h3>Lampu sendok</h3>
+        <p>Lampu hias dari sendok plastik merupakan kerajinan kreatif yang memanfaatkan barang bekas, seperti sendok plastik dan botol, menjadi hiasan yang indah dan bermanfaat. Pembuatan lampu ini sederhana, hemat biaya, serta ramah lingkungan karena menggunakan bahan daur ulang. Selain berfungsi sebagai penerangan, lampu sendok juga memiliki nilai estetika tinggi sehingga dapat mempercantik ruangan. Dengan sedikit kreativitas, barang yang semula dianggap sampah bisa diubah menjadi karya seni yang unik dan bernilai guna.</p>
+      </div>
+    </div>
+
+    <!-- Dua kolom utama -->
+    <div class="info-row">
+      <!-- Kiri -->
+      <div class="kolom-kiri">
+        <div class="box teknik">
+          <h4>Teknik</h4>
+          <ol>
+            <li>Persiapkan botol</li>
+            <li>Siapkan botol plastik besar (1,5 L atau lebih)</li>
+            <li>Potong bagian bawah botol agar bisa dimasukkan fitting lampu.</li>
+            <li>Potong sendok</li>
+            <li>Pisahkan bagian kepala sendok dengan gagangnya menggunakan cutter/gunting.</li>
+            <li>Simpan hanya bagian sendok yang cekung (kepala).</li>
+            <li>Tempel Sendok ke Botol</li>
+            <li>Oleskan lem tembak pada botol, tempelkan bagian kepala sendok mengelilingi botol dari bawah ke atas.</li>
+            <li>Tempel secara bertingkat seperti sisik ikan atau atap genteng agar rapih.</li>
+            <li>Tutupi seluruh permukaan botoll hingga menyerupai bentuk lampu</li>
+            <li>Untuk bagian leher botol, bisa ditempel sendok yang dipotong lebih kecil supaya terlihat rapi.</li>
+            <li>Pasang lampu</li>
+            <li>Masukkan fitting lampu beserta kabel melalui bagian bawah botol yang sudah dipotong.</li>
+            <li>Pasang bohlam LED</li>
+            <li>Finishing</li>
+            <li>Pastikan semua sendok menempel kuat.</li>
+            <li>Coba nyalakan lampu, lampu akan memantulkan cahaya indah melalui sendok-sendok plastic.</li>
+            
+          </ol>
+        </div>
+      </div>
+
+      <!-- Kanan -->
+      <div class="kolom-kanan">
+        <div class="box bahan">
+          <h4>Alat dan Bahan</h4>
+          <ul>
+            <li>Sendok plastik</li>
+            <li>Botol bekas</li>
+            <li>Lem tembak</li>
+            <li>Fitting lampu</li>
+            <li>Bohlam lampu LED</li>
+            <li>Kabel listrik</li>
+            <li>Gunting/cutter</li>
+            <li>Lem tembak</li>
+            <li>Obeng</li>
+            <li>Tang potong</li>
+            
+          </ul>
+        </div>
+
+        <div class="box keuangan">
+          <h4>Informasi Keuangan</h4>
+          <p><strong>Modal & Harga Jual:</strong> Rp 37.000 & Rp 50.000</p>
+          <p><strong>Laba:</strong> Rp 50.000 – Rp 37.000 ≈ Rp 13.000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
